@@ -1,0 +1,1 @@
+{"name":"automia-kinetiq","private":true,"version":"1.0.0","type":"module","scripts":{"dev":"vite","build":"vite build","preview":"vite preview"},"dependencies":{"react":"^18.3.1","react-dom":"^18.3.1","framer-motion":"^11.5.4","gsap":"^3.12.5","lenis":"^1.1.14","lucide-react":"^0.441.0"},"devDependencies":{"@vitejs/plugin-react":"^4.3.2","vite":"^5.4.10"}}
