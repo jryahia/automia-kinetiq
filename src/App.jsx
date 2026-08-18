@@ -100,7 +100,7 @@ const Hero = () => {
 /* ================= MARQUEE ================= */
 const Marquee = ({ items }) => (
   <div className="marquee"><div className="marquee-track">
-    {[...items, ...items, ...items].map((it, i) => <div className="marquee-item" key={i}>{it} <span>✦</span></div>)}
+    {[...items, ...items, ...items].map((it, i) => <div className="marquee-item" key={i}>{it} <span><svg style="display:inline-block;width:1em;height:1em;vertical-align:-0.125em" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 14 10 22 12 14 14 12 22 10 14 2 12 10 10"/></svg></span></div>)}
   </div></div>
 )
 
@@ -264,16 +264,16 @@ const Work = () => (
 
 /* ================= PROCESS ================= */
 const PROCESS = [
-  { n: '01', t: 'Discover', d: 'Audit, goals, audience & scope. Fixed quote before we start.', icon: '🔍' },
-  { n: '02', t: 'Design', d: 'Direction + a clickable prototype you approve. No guesswork.', icon: '🎨' },
-  { n: '03', t: 'Build', d: 'Kinetic React dev in 1-week sprints. You see it working.', icon: '⚙️' },
-  { n: '04', t: 'Launch', d: 'Ship, measure, report. Performance + SEO + support.', icon: '🚀' },
+  { n: '01', t: 'Discover', d: 'Audit, goals, audience & scope. Fixed quote before we start.', icon: '<svg style="display:inline-block;width:1em;height:1em;vertical-align:-0.125em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>' },
+  { n: '02', t: 'Design', d: 'Direction + a clickable prototype you approve. No guesswork.', icon: '<svg style="display:inline-block;width:1em;height:1em;vertical-align:-0.125em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 011.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>' },
+  { n: '03', t: 'Build', d: 'Kinetic React dev in 1-week sprints. You see it working.', icon: '<svg style="display:inline-block;width:1em;height:1em;vertical-align:-0.125em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>️' },
+  { n: '04', t: 'Launch', d: 'Ship, measure, report. Performance + SEO + support.', icon: '<svg style="display:inline-block;width:1em;height:1em;vertical-align:-0.125em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 00-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 012-3.95A12.88 12.88 0 0122 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 01-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>' },
 ]
 const Process = () => (
   <section className="process" id="process">
     <div className="wrap">
       <Reveal><SplitWords text="A process built on trust." className="sec-title" /></Reveal>
-      <p className="sec-sub">Milestones you approve, updates every week, a guarantee at the end. This is how we keep a 4.9★ rating.</p>
+      <p className="sec-sub">Milestones you approve, updates every week, a guarantee at the end. This is how we keep a 4.9<svg style="display:inline-block;width:1em;height:1em;vertical-align:-0.125em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg> rating.</p>
       <div className="proc-grid">
         {PROCESS.map((p, i) => (
           <Reveal key={i} delay={i * 0.08}>
@@ -302,7 +302,7 @@ const Testimonials = () => (
         {QUOTES.map((q, i) => (
           <Reveal key={i} delay={i * 0.1}>
             <figure className="quote">
-              <div className="stars">★★★★★</div>
+              <div className="stars"><svg style="display:inline-block;width:1em;height:1em;vertical-align:-0.125em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg><svg style="display:inline-block;width:1em;height:1em;vertical-align:-0.125em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg><svg style="display:inline-block;width:1em;height:1em;vertical-align:-0.125em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg><svg style="display:inline-block;width:1em;height:1em;vertical-align:-0.125em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg><svg style="display:inline-block;width:1em;height:1em;vertical-align:-0.125em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg></div>
               <blockquote>{q.q}</blockquote>
               <figcaption><b>{q.n}</b><span>{q.r}</span></figcaption>
             </figure>
@@ -334,7 +334,7 @@ const CTA = () => {
         ) : (
           <motion.div className="cta-done" initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}>
             <BadgeCheck size={44} />
-            <h3>Brief received 🎉</h3>
+            <h3>Brief received <svg style="display:inline-block;width:1em;height:1em;vertical-align:-0.125em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></h3>
             <p>We'll reply within one business day with your scope and quote.</p>
           </motion.div>
         )}
